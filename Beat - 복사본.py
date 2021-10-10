@@ -4,7 +4,7 @@ import random
 
 client = discord.Client()
 
-token = "
+token = (access_token)
 
 @client.event
 async def on_ready():
@@ -68,7 +68,7 @@ async def on_message(message):
             await message.channel.send("{}, 당신은 명령어를 사용할 수 있는 권한이 없습니다".format(message.author.mention))
 
 
-access_token = os.environ['BOT_TOKEN'
+access_token = os.environ['BOT_TOKEN']
 
 
 client.run(token)
